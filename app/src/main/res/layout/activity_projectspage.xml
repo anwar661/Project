@@ -35,12 +35,4 @@
             android:background="?android:attr/windowBackground"
             app:menu="@menu/navigation" />
     </LinearLayout>
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_action_search"
-        android:onClick="sea"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>
