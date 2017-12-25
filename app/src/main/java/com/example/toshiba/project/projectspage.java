@@ -81,8 +81,8 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                                 Intent i = new Intent(view.getContext(), projectp2.class);
                                 startActivityForResult(i, 6);
                         }
-                        if (position == 1) {
-                                Intent i = new Intent(view.getContext(), profile.class);
+                        if (position == 0) {
+                                Intent i = new Intent(view.getContext(), project2016.class);
                                 startActivityForResult(i, 1);
                         }
                 }

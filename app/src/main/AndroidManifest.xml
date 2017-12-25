@@ -32,7 +32,9 @@
         <activity android:name=".contact_us" />
         <activity android:name=".pop_up_pass" />
         <activity android:name=".account" />
-        <activity android:name=".Arrangement_words"></activity>
+        <activity android:name=".Arrangement_words" />
+        <activity android:name=".prophet" />
+        <activity android:name=".english_language"></activity>
     </application>
 
 </manifest>

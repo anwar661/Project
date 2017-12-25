@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.toshiba.project.project2016">
+    tools:context="com.example.toshiba.project.projectp2">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/prophet"/>
+
+    <TextView
+        android:id="@+id/proName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Questions about the Prophet" />
+
+    <TextView
+        android:id="@+id/proInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proName1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Questions and answers about the prophetic biography "/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/proInfo1"
+        android:layout_marginTop="15dp"
+        android:text="watch video"
+        android:onClick="watchvideo1"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn1"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        android:src="@drawable/order" />
+
+    <TextView
+        android:id="@+id/proName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Arrangement Words" />
+
+    <TextView
+        android:id="@+id/proInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A game designed to arrange scattered words"
+        android:layout_above="@+id/watchvideo2"
+        android:layout_alignEnd="@+id/proName1"
+        android:layout_alignStart="@+id/proName2" />
+
+    <Button
+        android:id="@+id/watchvideo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="watch video"
+        android:onClick="watchvideo2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/watchvideo2"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/english_language"/>
+
+    <TextView
+        android:id="@+id/proName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Development of the english language"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/proInfo2" />
+
+    <TextView
+        android:id="@+id/proInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proName3"
+        android:layout_marginTop="29dp"
+        android:text="English language development for children is between eight to fifteen years old and tests its focus"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/proInfo3"
+        android:layout_marginTop="17dp"
+        android:text="watch video"
+        android:onClick="watchvideo3"/>
+
+
+</RelativeLayout>
+

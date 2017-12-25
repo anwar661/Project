@@ -11,14 +11,21 @@ public class projectp2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projectp2);
-    }public void readMore1(View V) {
+    }public void watchvideo1(View V) {
 
-        Intent i = new Intent(this, Emergency.class);
+        Intent i = new Intent(this, prophet.class);
         startActivity(i);
         finish();
 
 
-    }public void watchvideo(View V) {
+    }public void watchvideo2(View V) {
+
+        Intent i = new Intent(this, Arrangement_words.class);
+        startActivity(i);
+        finish();
+
+
+    }public void watchvideo3(View V) {
 
         Intent i = new Intent(this, Arrangement_words.class);
         startActivity(i);
