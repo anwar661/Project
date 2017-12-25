@@ -15,25 +15,14 @@ public class Arrangement_words extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arrangement_words);
-         clk = (Button)findViewById(R.id.Watch);
+        clk = (Button) findViewById(R.id.Watch);
         getWindow().setFormat(PixelFormat.UNKNOWN);
-        vi = (VideoView)findViewById(R.id.videoView);
-
+        vi = (VideoView) findViewById(R.id.videoView);
+    }public void videoplay(View view){
         String vidiop = "android.resource://com.example.toshiba.project/"+R.raw.order_words;
         Uri uri2 = Uri.parse(vidiop);
         vi.setVideoURI(uri2);
         vi.requestFocus();
         vi.start();
-    vi.setOnClickListener(new Button.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            vi = (VideoView) findViewById(R.id.videoView);
-// VideoView mVideoView = new VideoView(this);
-            String uriPath = "android.resource://com.example.toshiba.project/"+R.raw.order_words;
-            Uri uri2 = Uri.parse(uriPath);
-            vi.setVideoURI(uri2);
-            vi.requestFocus();
-            vi.start();
-        }
-    });
+
 }}
