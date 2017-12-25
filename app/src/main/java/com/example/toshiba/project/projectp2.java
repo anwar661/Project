@@ -18,6 +18,13 @@ public class projectp2 extends AppCompatActivity {
         finish();
 
 
+    }public void watchvideo(View V) {
+
+        Intent i = new Intent(this, Arrangement_words.class);
+        startActivity(i);
+        finish();
+
+
     }
 
 

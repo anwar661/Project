@@ -53,8 +53,8 @@ public class profile extends AppCompatActivity {
                         startActivity(i1);
                         Log.d("test","from project page in navigation main");
                         break;
-                    case R.id.navigation_like:
-                        Intent i2=new Intent(profile.this,likepage.class);
+                    case R.id.navigation_search:
+                        Intent i2=new Intent(profile.this,search.class);
                         Log.d("test","from project page befor go to like page");
                         startActivity(i2);
                         break;

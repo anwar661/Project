@@ -47,7 +47,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/btn1" />
+        android:layout_below="@+id/btn1"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        android:src="@drawable/order" />
 
     <TextView
         android:id="@+id/proName2"
@@ -56,32 +59,31 @@
         android:layout_alignTop="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:text="Name of project 2" />
+        android:text="Arrangement Words" />
 
     <TextView
         android:id="@+id/proInfo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:text="information about project" />
+        android:text="A game designed to arrange scattered words"
+        android:layout_above="@+id/watchvideo2"
+        android:layout_alignParentEnd="true" />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/watchvideo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btn1"
         android:layout_centerVertical="true"
-        android:text="Read More"
-        android:onClick="readMore2"/>
+        android:text="See video"
+        android:onClick="watchvideo"/>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/btn2"
+        android:layout_below="@+id/watchvideo2"
         android:layout_marginTop="27dp" />
 
     <TextView

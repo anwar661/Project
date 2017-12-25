@@ -1,10 +1,13 @@
 package com.example.toshiba.project;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,6 +22,8 @@ import java.util.ArrayList;
 public class search extends AppCompatActivity {
     static ArrayList<String> items;
     ListView listView;
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener;
+    BottomNavigationView btmnav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +46,35 @@ public class search extends AppCompatActivity {
                 Toast.makeText(search.this,"" +text,Toast.LENGTH_SHORT).show();
 
             }
-        });}@Override
+        });
+        btmnav=(BottomNavigationView)findViewById(R.id.navigation);
+        Menu menu=btmnav.getMenu();
+        MenuItem menuItem=menu.getItem(1);
+        menuItem.setChecked(true);
+        btmnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_project:
+                        Intent i1=new Intent(search.this,projectspage.class);
+                        startActivity(i1);
+
+                        break;
+                    case R.id.navigation_search:
+                        //Intent i2=new Intent(likepage.this,likepage.class);
+
+                        // startActivity(i2);
+                        break;
+                    case R.id.navigation_profile:
+                        Intent i3=new Intent(search.this,profile.class);
+                        Log.d("test","from like page befor go to profile page");
+                        startActivity(i3);
+                        break;
+                }
+                return false;
+            }
+        });
+    }@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater=getMenuInflater();
         inflater.inflate(R.menu.menu,menu);

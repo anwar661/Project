@@ -18,7 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".likepage" />
         <activity android:name=".login" />
         <activity android:name=".profile" />
         <activity android:name=".projectspage" />
@@ -32,7 +31,8 @@
         <activity android:name=".setting" />
         <activity android:name=".contact_us" />
         <activity android:name=".pop_up_pass" />
-        <activity android:name=".account"></activity>
+        <activity android:name=".account" />
+        <activity android:name=".Arrangement_words"></activity>
     </application>
 
 </manifest>
